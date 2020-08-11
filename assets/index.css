@@ -2,28 +2,127 @@
     background-color: #ffdbbc;
     min-height: 70vh;
     margin: 0;
-    padding: 2%;
+    padding: 2% 2% 6%;
 }
 
 .section-2 {
     padding: 2%;
+    margin-bottom: 5%;
+}
+
+input::placeholder {
+    color: lightgray;
 }
 
 .search {
-    width: 100%;
+    width: 80%;
     border-radius: 25rem;
     box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
     border: transparent;
-    padding: 2% 7%;
+    padding: 1.5% 7%;
+    margin: auto;
+    display: block;
 }
 
 .avatar {
     background-color: #e82147;
-    padding: 6%;
+    margin: 10px;
+    padding: 2% 0!important;
+}
+
+.avatar-img {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.copyright {
+    margin: 0 2%;
+    padding: 8px 0 0 0;
+    font-weight: 500 !important;
+    font-size: 70%;
+}
+
+.sociais-p {
+    padding: 0px 15% 0px 0px !important;
+}
+
+.container-copyright {
+    padding: 0px 0px 0px 10% !important;
+}
+
+@media(max-width: 770px) {
+    .sociais-p {
+        padding: 0px !important;
+    }
+    .container-copyright {
+        padding: 0px !important;
+    }
+    .elemento {
+        position: absolute !important;
+    }
+    .elementosanduiche,
+    .elemento-amarelo {
+        width: 100% !important;
+    }
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.logo-footer {
+    width: 90px;
+}
+
+.gastronomico {
+    margin: 10% 0;
+}
+
+.elemento-vermelho {
+    width: 80%;
+}
+
+.elemento-amarelo {
+    width: 80%;
+    margin-bottom: 40%;
+}
+
+.social {
+    width: 4%;
+}
+
+footer {
+    background-image: url(/assets/images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8% 0px 5% 0px;
+    margin: 0 !important;
 }
 
 .pink {
-    color: #e82147;
+    color: #e82147 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+.receita {
+    margin: 3% 0 5% 0px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif !important;
+    color: black;
+}
+
+small {
+    font-weight: bold !important;
 }
 
 .textdark {
@@ -39,6 +138,27 @@ ul {
     object-fit: cover;
 }
 
+.elementosanduiche {
+    width: 80%;
+    float: right;
+}
+
+.sorvete {
+    width: 85%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.linha-amarela {
+    margin: 2% auto;
+    width: 100px;
+}
+
+.section-3 {
+    padding-bottom: 6%;
+}
+
 li:hover {
     color: #e82147 !important;
 }
@@ -50,6 +170,15 @@ li:hover {
 
 .itens>.icon-hover {
     display: none;
+}
+
+.itens {
+    margin: 30% 0;
+}
+
+.icon {
+    width: 30px;
+    margin-right: 30px;
 }
 
 .logo {
