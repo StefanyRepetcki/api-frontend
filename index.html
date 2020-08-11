@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Celero Front End</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/index.css">
+    <!-- IMPORTACAO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- IMPORTACAO JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <div class="row d-flex align-items-center align-self-center justify-content-center">
+            <div class="col col-sm-12 col-md-3 col-lg-3"><img class="logo img-responsive" src="assets/images/logo.png"></div>
+            <div class="col col-sm-12 col-md-6 col-lg-6"><input class="search" type="text" placeholder="Pesquise alguma receita"></div>
+            <div class="col col-sm-12 col-md-3 col-lg-3 text-right pink d-flex align-items-center align-self-center justify-content-center">
+                <p class="m-4">Marina</p>
+                <a class="avatar rounded-circle"><img class="img-responsive" src="assets/images/avatar.png"></a>
+            </div>
+        </div>
+        <div class="row p-10">
+            <div class="col col-2 d-flex align-items-center"><img class="img-responsive elemento" src="assets/images/elementobranco.png"></div>
+            <div class="col col-sm-12 col-md-12 col-lg-4">
+                <h1 class="textdark">Bem vindo de volta</h1>
+                <h1 class="pink">Marina Wedderhoff</h1><br>
+                <p>Contribuição da comunidade:</p>
+                <p>Ceviche de peixe branco</p>
+                <p class="pink">Por Michel Filipe</p>
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-4 d-flex align-items-center">
+                <img class="img-responsive elemento position-absolute" src="assets/images/elementorosa.png">
+                <img class="img-responsive elemento position-relative sopa" src="assets/images/sopa.png">
+            </div>
+            <div class="col col-2"></div>
+        </div>
+    </div>
+    <div class="container section-2">
+        <h1 class="text-center textdark">Experimente alguma<br> das últimas receitas</h1>
+        <div class="row">
+            <div class="col col-md-6"><img class="img-responsive elemento" src="assets/images/pao.png"></div>
+            <div class="col col-md-6">
+                <div>
+                    <p class="pink">Adicionado Ontem</p>
+                    <h4>Sanduíche de tomate<br> com salada de ovos</h4>
+                    <p class="pink">Fácil</p><img src="assets/images/estrela.png"><img src="assets/images/estrela.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-2"><img class="img-responsive elemento" src="assets/images/elementorosa2.png"></div>
+            <div class="col col-md-8">
+                <h2 class="text-center textdark">Entre no mundo gastronômico</h2>
+                <div class="row">
+                    <div class="col col-md-3">
+                        <ul>
+                            <li onmouseover="imagemHover(this)" onmouseout="imagemposHover(this)" class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/prato.png"><img class="icon-hover" src="assets/images/pratohover.png">
+                                <h4>Cozinha</h4>
+                            </li>
+                            <li onmouseover="imagemHover(this)" onmouseout="imagemposHover(this)" class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/cupcake.png"><img class="icon-hover" src="assets/images/cupcakehover.png">
+                                <h4>Patisserie</h4>
+                            </li>
+                            <li onmouseover="imagemHover(this)" onmouseout="imagemposHover(this)" class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/drink.png"><img class="icon-hover" src="assets/images/drinkhover.png">
+                                <h4>Drinks</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-9"><img src="assets/images/sorvete.png" class="img-responsive elemento"></div>
+                </div>
+            </div>
+            <div class="col col-md-2"><img src="assets/images/elementoamarelo.png" class="img-responsive elemento"></div>
+        </div>
+    </div>
+</body>
+<footer>
+    <img src="assets/images/footer.png" class="img-responsive elemento position-absolute">
+    <div class="row">
+        <div class="col col-md-6"><img class="logo img-responsive" src="assets/images/logo.png"> @2020 Cookfy</div>
+        <div class="col col-md-6"></div>
+    </div>
+</footer>
+<html>
