@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- IMPORTACAO JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- IMPORTACAO FONTE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,8 +23,8 @@
             <div class="col col-sm-12 col-md-3 col-lg-3"><img class="logo img-responsive" src="assets/images/logo.png"></div>
             <div class="col col-sm-12 col-md-6 col-lg-6"><input class="search" type="text" placeholder="Pesquise alguma receita"></div>
             <div class="col col-sm-12 col-md-3 col-lg-3 text-right pink d-flex align-items-center align-self-center justify-content-center">
-                <p class="m-4">Marina</p>
-                <a class="avatar rounded-circle"><img class="img-responsive" src="assets/images/avatar.png"></a>
+                <small class="font-weight-bold pink">Marina</small>
+                <a class="avatar rounded-circle"><img class="avatar-img img-responsive" src="assets/images/avatar.png"></a>
             </div>
         </div>
         <div class="row p-10">
@@ -40,47 +44,49 @@
         </div>
     </div>
     <div class="container section-2">
-        <h1 class="text-center textdark">Experimente alguma<br> das últimas receitas</h1>
-        <div class="row">
-            <div class="col col-md-6"><img class="img-responsive elemento" src="assets/images/pao.png"></div>
-            <div class="col col-md-6">
+        <h1 class="text-center textdark receita">Experimente alguma<br> das últimas receitas</h1>
+        <div class="row section-3">
+            <div class="col col-sm-12 col-md-12 col-lg-7 d-flex align-items-end justify-content-end"><img class="img-responsive elementosanduiche" src="assets/images/pao.png" alt="um sanduiche"></div>
+            <div class="col col-sm-12 col-md-12 col-lg-5 d-flex align-items-center justify-content-left">
                 <div>
-                    <p class="pink">Adicionado Ontem</p>
+                    <small class="pink">Adicionado Ontem</small>
                     <h4>Sanduíche de tomate<br> com salada de ovos</h4>
-                    <p class="pink">Fácil</p><img src="assets/images/estrela.png"><img src="assets/images/estrela.png">
+                    <small class="pink">Fácil</small><img class="m-1" src="assets/images/estrela.png" alt="estrela"><img class="m-1" src="assets/images/estrela.png" alt="estrela">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col col-md-2"><img class="img-responsive elemento" src="assets/images/elementorosa2.png"></div>
+            <img class="linha-amarela" src="assets/images/elementolinhaamarela.png" alt="linha amarela">
+        </div>
+        <div class="row">
+            <div class="col col-md-2"><img class="img-responsive elemento-vermelho" src="assets/images/elementorosa2.png" alt="elemento rosa"></div>
             <div class="col col-md-8">
-                <h2 class="text-center textdark">Entre no mundo gastronômico</h2>
+                <h2 class="text-center textdark gastronomico">Entre no mundo gastronômico</h2>
                 <div class="row">
-                    <div class="col col-md-3">
-                        <ul>
-                            <li onmouseover="imagemHover(this)" onmouseout="imagemposHover(this)" class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/prato.png"><img class="icon-hover" src="assets/images/pratohover.png">
+                    <div class="col col-sm-12 col-md-12 col-lg-3">
+                        <ul class="p-0">
+                            <li class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/prato.png"><img class="icon-hover" src="assets/images/pratohover.png">
                                 <h4>Cozinha</h4>
                             </li>
-                            <li onmouseover="imagemHover(this)" onmouseout="imagemposHover(this)" class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/cupcake.png"><img class="icon-hover" src="assets/images/cupcakehover.png">
+                            <li class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/cupcake.png"><img class="icon-hover" src="assets/images/cupcakehover.png">
                                 <h4>Patisserie</h4>
                             </li>
-                            <li onmouseover="imagemHover(this)" onmouseout="imagemposHover(this)" class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/drink.png"><img class="icon-hover" src="assets/images/drinkhover.png">
+                            <li class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/drink.png"><img class="icon-hover" src="assets/images/drinkhover.png">
                                 <h4>Drinks</h4>
                             </li>
                         </ul>
                     </div>
-                    <div class="col col-md-9"><img src="assets/images/sorvete.png" class="img-responsive elemento"></div>
+                    <div class="col col-sm-12 col-md-12 col-lg-9"><img src="assets/images/sorvete.png" alt="sorvete Patisserie" class="sorvete img-responsive elemento"></div>
                 </div>
             </div>
-            <div class="col col-md-2"><img src="assets/images/elementoamarelo.png" class="img-responsive elemento"></div>
+            <div class="col col-md-2 d-flex align-items-end justify-content-end"><img src="assets/images/elementoamarelo.png" alt="elemento amarelo" class="img-responsive elemento-amarelo"></div>
         </div>
     </div>
 </body>
 <footer>
-    <img src="assets/images/footer.png" class="img-responsive elemento position-absolute">
     <div class="row">
-        <div class="col col-md-6"><img class="logo img-responsive" src="assets/images/logo.png"> @2020 Cookfy</div>
-        <div class="col col-md-6"></div>
+        <div class="col col-sm-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center container-copyright"><img class="logo-footer img-responsive" src="assets/images/logo.png"> <small class="copyright">@2020 Cookfy</small></div>
+        <div class="col col-sm-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center sociais-p"><img class="m-2 social" src="assets/images/fb.png"><img class="m-2 social" src="assets/images/insta.png"><img class="m-2 social" src="assets/images/twitter.png"><img class="m-2 social" src="assets/images/linkedin.png"><img class="m-2 social" src="assets/images/pinterest.png"></div>
     </div>
 </footer>
 <html>
