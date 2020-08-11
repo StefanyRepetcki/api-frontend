@@ -1,0 +1,67 @@
+.section {
+    background-color: #ffdbbc;
+    min-height: 70vh;
+    margin: 0;
+    padding: 2%;
+}
+
+.section-2 {
+    padding: 2%;
+}
+
+.search {
+    width: 100%;
+    border-radius: 25rem;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    border: transparent;
+    padding: 2% 7%;
+}
+
+.avatar {
+    background-color: #e82147;
+    padding: 6%;
+}
+
+.pink {
+    color: #e82147;
+}
+
+.textdark {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.elemento {
+    width: 100%;
+    object-fit: cover;
+}
+
+li:hover {
+    color: #e82147 !important;
+}
+
+.sopa {
+    margin: 0% 15%;
+    width: 80%;
+}
+
+.itens>.icon-hover {
+    display: none;
+}
+
+.logo {
+    width: 100px;
+    margin: 5% 15%;
+}
+
+.p-10 {
+    padding: 8% 2% 2% 2%;
+}
+
+p {
+    font-weight: bold;
+    margin: 0 !important;
+}
