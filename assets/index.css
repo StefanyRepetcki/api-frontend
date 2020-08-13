@@ -259,17 +259,13 @@ input::placeholder {
     padding: 0px 0px 0px 10% !important;
 }
 
-@media(max-width: 770px) {
+@media(max-width: 690px) {
     .sociais-p {
         padding: 0px !important;
     }
     .lupa {
         right: 60px !important;
         top: 6px !important;
-        cursor: pointer !important;
-    }
-    .sidenav {
-        width: 465px !important;
     }
     body {
         overflow-x: initial !important;
@@ -300,8 +296,8 @@ input::placeholder {
         width: 100% !important;
     }
     .sidenav {
-        right: -90px;
-        padding: 40px 100px 40px 0px !important;
+        right: -150px;
+        padding: 30px 160px 0px 0px !important;
     }
     .itens {
         padding: 0 !important;
