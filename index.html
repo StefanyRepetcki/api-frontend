@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <title>Desafio Celero Front End</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="assets/index.css">
     <!-- IMPORTACAO BOOTSTRAP CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- IMPORTACAO JQUERY CDN-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- IMPORTACAO FONTE GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -51,10 +50,10 @@
     </div>
     <div class="section">
         <div class="row d-flex align-items-center align-self-center justify-content-center">
-            <div class="col col-sm-12 col-md-3 col-lg-3"><img class="logo img-responsive" src="assets/images/logo.png"></div>
-            <div class="col col-sm-12 col-md-6 col-lg-6"><input class="search" type="text" placeholder="Pesquise alguma receita"></div>
-            <div class="col col-sm-12 col-md-3 col-lg-3 text-right">
-                <span class="pink d-flex align-items-center align-self-center justify-content-center" onclick="openNav()">  <small class="font-weight-bold pink">Marina</small>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3"><img class="logo img-responsive" src="assets/images/logo.png"></div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6"><input class="search" type="text" placeholder="Pesquise alguma receita"></div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-right">
+                <span class="pink d-flex align-items-center align-self-center justify-content-center mobile-avatar" onclick="openNav()">  <small class="font-weight-bold pink">Marina</small>
                 <a class="avatar rounded-circle"><img class="avatar-img img-responsive" src="assets/images/avatar.png"></a>
             </span>
             </div>
@@ -63,20 +62,22 @@
             <div class="col col-2 d-flex align-items-center">
                 <img class="img-responsive elemento" src="assets/images/elementobranco.png">
             </div>
-            <div class="col col-sm-12 col-md-12 col-lg-4">
+            <div class="col-12 col-md-12 col-lg-4">
                 <h1 class="textdark">Bem vindo de volta</h1>
                 <h1 class="pink">Marina Wedderhoff</h1><br><br><br>
                 <p>Contribuição da comunidade:</p>
                 <p>Ceviche de peixe branco</p>
                 <p class="pink">Por Michel Filipe</p>
             </div>
-            <div class="col col-sm-12 col-md-12 col-lg-4 d-flex align-items-center">
+            <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center">
                 <img class="img-responsive elemento position-absolute" src="assets/images/elementorosa.png">
                 <img class="img-responsive elemento position-relative sopa" src="assets/images/sopa.png">
                 <div class="position-absolute sopa hoversopa">
                     <div class="d-flex align-items-center filhosopa">
-                        <img class="m-3 icon-telefone" src="assets/images/setadireita.png" alt="seta">
-                        <p class="pink">Ver foto</p>
+                        <a class="d-flex align-items-center" data-toggle="modal" data-target="#modalFotobanner">
+                            <img class="m-3 icon-telefone" src="assets/images/setadireita.png" alt="seta">
+                            <p class="pink">Ver foto</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -96,10 +97,17 @@
                 </div>
             </div>
             <div class="col col-sm-12 col-md-12 col-lg-5 d-flex align-items-center justify-content-left">
-                <div>
-                    <small class="pink">Adicionado Ontem</small>
-                    <h4>Sanduíche de tomate<br> com salada de ovos</h4>
-                    <small class="pink">Fácil</small><img class="m-1" src="assets/images/estrela.png" alt="estrela"><img class="m-1" src="assets/images/estrela.png" alt="estrela">
+                <div class="row">
+                    <div class="col-12">
+                        <small class="pink">Adicionado Ontem</small>
+                        <h4>Sanduíche de tomate<br> com salada de ovos</h4>
+                        <small class="pink">Fácil</small>
+                        <img class="m-1" src="assets/images/estrela.png" alt="estrela"><img class="m-1" src="assets/images/estrela.png" alt="estrela">
+                    </div>
+                    <div class="col-12">
+                        <img class="m-4" src="assets/images/setaesquerda.png">
+                        <img class="m-4" src="assets/images/setadireita.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,15 +119,23 @@
             <div class="col col-md-8">
                 <h2 class="text-center textdark gastronomico">Entre no mundo gastronômico</h2>
                 <div class="row">
-                    <div class="col col-sm-12 col-md-12 col-lg-3">
+                    <div class="col col-sm-12 col-md-12 col-lg-3 mobile-box">
                         <ul class="p-0">
-                            <li class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/prato.png"><img class="icon-hover" src="assets/images/pratohover.png">
-                                <h4>Cozinha</h4>
+                            <li class="itens d-flex align-items-center">
+
+                                <img class="icon" src="assets/images/prato.png">
+                                <!-- <img class="icon-hover" src="assets/images/pratohover.png"> -->
+                                <h4 class="hover-rosa">Cozinha</h4>
+
                             </li>
-                            <li class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/cupcake.png"><img class="icon-hover" src="assets/images/cupcakehover.png">
+                            <li class="itens text-secondary d-flex align-items-center">
+                                <img class="icon" src="assets/images/cupcake.png">
+                                <!-- <img class="icon-hover" src="assets/images/cupcakehover.png"> -->
                                 <h4>Patisserie</h4>
                             </li>
-                            <li class="itens text-secondary d-flex align-items-center"><img class="icon" src="assets/images/drink.png"><img class="icon-hover" src="assets/images/drinkhover.png">
+                            <li class="itens text-secondary d-flex align-items-center">
+                                <img class="icon" src="assets/images/drink.png">
+                                <!-- <img class="icon-hover" src="assets/images/drinkhover.png"> -->
                                 <h4>Drinks</h4>
                             </li>
                         </ul>
@@ -130,23 +146,56 @@
             <div class="col col-md-2 d-flex align-items-end justify-content-end"><img src="assets/images/elementoamarelo.png" alt="elemento amarelo" class="img-responsive elemento-amarelo"></div>
         </div>
     </div>
+    <div class="modal" id="modalFotobanner">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body p-0 row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                        <img class="img-responsive img-sopa-modal" src="assets/images/sopamodal.png" alt="sopa">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 p-2">
+                        <a type="button" class="fecharmodal" data-dismiss="modal"><img alt="fechar" class="fecharmodal" src="assets/images/fechar.png"></a>
+                        <div class="texto-ceviche">
+                            <h4 class="textdark title-ceviche">
+                                Ceviche de peixe branco
+                            </h4>
+                            <h4 class="pink title-ceviche">
+                                Por Michel Filipe
+                            </h4>
+                            <p class="ceviche-fonte">O ceviche é um prato de origem peruana feito com cubos de peixe que são cozidos em uma solução ácida, geralmente caldo de limão. Quando o peixe em contato com o limão, um processo químico é iniciado: a proteína do peixe se
+                                desnatura e a textura do peixe muda e o peixe fica mais saboroso. O segredo para fazer um bom ceviche é a qualidade do ingrediente principal: o peixe tem que estar bem fresco. Esse prato peruano pode ser feito com salmão,
+                                camarões e alguns contam até com manga e abacate, e o tradicional é preparado com peixe branco.</p>
+                            <div class="d-flex align-items-center">
+                                <div class="pink font-weight-bold curtir">
+                                    <img class="icon-telefone" src="assets/images/curtir.png">curtir</div>
+                                <div class="pink font-weight-bold "><img class="m-3 icon-telefone " src="assets/images/setadireita.png " alt="seta ">Ver receita</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
-    <div class="row">
-        <div class="col col-sm-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center container-copyright"><img class="logo-footer img-responsive" src="assets/images/logo.png"> <small class="copyright">@2020 Cookfy.</small></div>
-        <div class="col col-sm-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center sociais-p"><img class="m-2 social" src="assets/images/fb.png"><img class="m-2 social" src="assets/images/insta.png"><img class="m-2 social" src="assets/images/twitter.png"><img class="m-2 social" src="assets/images/linkedin.png"><img class="m-2 social" src="assets/images/pinterest.png"></div>
+    <div class="row ">
+        <div class="col col-sm-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center container-copyright "><img class="logo-footer img-responsive " src="assets/images/logo.png "> <small class="copyright ">@2020 Cookfy.</small></div>
+        <div class="col col-sm-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center sociais-p "><img class="m-2 social " src="assets/images/fb.png "><img class="m-2 social " src="assets/images/insta.png "><img class="m-2 social
+                                        " src="assets/images/twitter.png "><img class="m-2 social " src="assets/images/linkedin.png "><img class="m-2 social " src="assets/images/pinterest.png "></div>
     </div>
 </footer>
 <script>
     // abrindo o menu
     function openNav() {
-        document.getElementById("mySidenav").style.width = "515px";
-        $(".background-darken").css("display", "block");
+        $("#mySidenav").css("width", "515px");
+        $(".background-darken ").css("display ", "block ");
     }
     // fechando o menu 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        $(".background-darken").css("display", "none");
+        $("#mySidenav").css("width", "0");
+        $(".background-darken ").css("display ", "none ");
     }
 </script>
 <html>
