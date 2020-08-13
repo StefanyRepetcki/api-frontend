@@ -263,6 +263,9 @@ input::placeholder {
     .sociais-p {
         padding: 0px !important;
     }
+    .terceiro-elemento-red {
+        display: none;
+    }
     .lupa {
         right: 60px !important;
         top: 6px !important;
@@ -542,6 +545,12 @@ footer {
 
 
 /* fimsocial */
+
+.terceiro-elemento-red {
+    position: absolute;
+    right: 90px;
+    margin-top: 230px;
+}
 
 ::-webkit-scrollbar {
     width: 12px;
