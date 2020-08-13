@@ -1,5 +1,5 @@
 # desafio-celero-front-end
 
-TECNOLOGIAS UTILIZADAS: BOOSTRAP PARA GRID RESPONSIVO, AJAX PARA API.
+Tecnologias utilizadas: Bootsrap para grid responsivo, Ajax para consumir API. 
 
-O PROJETO FOI HOSPEDADO NO GIT PAGE: https://stefanyrepetcki.github.io/desafio-celero-front-end/
+O projeto foi hospedado no git page: https://stefanyrepetcki.github.io/desafio-celero-front-end/ .
