@@ -14,6 +14,54 @@ p {
     color: black;
 }
 
+.img-sopa-modal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-ceviche {
+    padding: 10% 20% 0 5%;
+}
+
+.ceviche-fonte {
+    font-size: .8rem;
+    color: #555455;
+    font-weight: 500;
+    margin: 10% 0 !important;
+}
+
+.fecharmodal {
+    width: 20px;
+}
+
+.curtir {
+    width: 115px;
+    border: 1px solid #e82147;
+    text-align: center;
+    border-radius: 50px !important;
+    margin-right: 30px;
+}
+
+.title-ceviche {
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold;
+}
+
+.fecharmodal {
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+@media (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+        max-width: 1020px !important;
+        top: 10% !important;
+    }
+}
+
 
 /* menu */
 
@@ -171,11 +219,26 @@ input::placeholder {
     .sociais-p {
         padding: 0px !important;
     }
+    .mobile-avatar {
+        position: absolute;
+        top: -105px;
+        right: 40px;
+    }
+    .mobile-box {
+        display: flex;
+        align-items: center;
+    }
+    br {
+        display: none !important;
+    }
     .container-copyright {
         padding: 0px !important;
     }
     .elemento {
         position: absolute !important;
+    }
+    .sorvete {
+        position: relative !important;
     }
     .elementosanduiche,
     .elemento-amarelo {
@@ -184,6 +247,9 @@ input::placeholder {
     .sidenav {
         right: -90px;
         padding: 40px 100px 40px 0px !important;
+    }
+    .itens {
+        padding: 0 !important;
     }
     .perfil,
     .perfil-tel-email,
@@ -332,13 +398,26 @@ li:hover {
     opacity: 1;
 }
 
-.itens>.icon-hover {
-    display: none;
-}
-
 .itens {
     padding: 20% 6%;
     width: 220px;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+a:hover {
+    color: #e82147 !important;
+    text-decoration: none !important;
+}
+
+.hover-rosa {
+    color: grey !important;
+}
+
+.hover-rosa:hover {
+    color: #e82147 !important;
 }
 
 .icon {
