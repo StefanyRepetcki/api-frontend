@@ -1,4 +1,4 @@
-# desafio-celero-front-end
+# 
 
 Tecnologias utilizadas: Bootstrap para grid responsivo, Ajax para consumir API. 
 
